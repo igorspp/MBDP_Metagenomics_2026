@@ -217,10 +217,10 @@ Sample batch job script:
 ```
 #!/bin/bash
 #SBATCH --job-name=iphop
-#SBATCH --time=72:00:00
+#SBATCH --time=48:00:00
 #SBATCH --partition=small
 #SBATCH --account=project_2001499
-#SBATCH --mem=100G
+#SBATCH --mem=50G
 #SBATCH --cpus-per-task=12
 #SBATCH --gres=nvme:100
 
