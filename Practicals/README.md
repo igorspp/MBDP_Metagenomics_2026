@@ -168,6 +168,19 @@ megahit \
 
 ## Assembly QC
 
+Next we will assess the assemblies with metaquast and choose the best approach for the downstream analyses. Check the options you used from the manual of metaquast.
+
+```bash
+module load quast/5.2.0
+
+metaquast.py \
+    03_ASSEMBLY/*_flye/assembly.fasta \
+    03_ASSEMBLY/*_hybrid/contigs.fasta \
+    03_ASSEMBLY/*_megahit/final.contigs.fa \
+    -o 03_ASSEMBLY/QUAST \
+    --max-ref-number 0
+```
+
 ## Read-based taxonomy
 
 ## Viromics
